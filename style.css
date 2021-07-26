@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #f5c0c0;
+  text-align: right;
+  line-height: 70px;
+  position: fixed;
+  z-index: 1;
+}
+
+.header-nav__link {
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.main-presentation {
+  position: relative;
+  top: 100px;
+  left: 50px;
+}
+
+.main-presentation__title {
+  font-size: 50px;
+}
+
+.main-presentation__img {
+  width: 450px;
+  height: 500px;
+}
+
+.main-introducingme {
+  position: relative;
+  top: 80px;
+}
+
+.main-introducingme__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-introducingme__text {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 80px;
+  margin-right: 30px;
+}
+
+.main-tools {
+  margin-top: 150px;
+  margin-left: 80px;
+}
+
+.main-tools__title {
+  color: #ff7171;
+  font-size: 50px;
+}
+
+.main-tools__divtools {
+  width: 80%;
+  height: 500px;
+  background-color: #f0e4d7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-tools div img {
+  width: 90px;
+  height: 90px;
+}
+
+.main-projects {
+  margin-top: 150px;
+  margin-left: 80px;
+}
+
+.main-projects__div {
+  width: 80%;
+  height: 500px;
+  position: relative;
+  top: 70px;
+  background-color: #fdfbf9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.main-projects__div p {
+  text-align: center;
+  color: #000000;
+  opacity: 13%;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 40px;
+  padding: 219px 20px;
+}
+
+.main-projects__divtext h2 {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  color: #ff7171;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 84px;
+  position: relative;
+  bottom: 516px;
+}
+
+.main-contact {
+  position: relative;
+  margin-top: 150px;
+  margin-left: 80px;
+}
+
+.main-contact__form {
+  width: 80%;
+  height: 500px;
+  background-color: #9fd8df;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 50px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.main-contact__title {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  color: #ff7171;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 84px;
+}
+
+input[type="text"],
+input[type="email"] {
+  margin: 4px 0;
+  width: 202px;
+  height: 30px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+.main-contact__form textarea {
+  width: 200px;
+  height: 150px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+.contact-form__button {
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #cdf0ea;
+  width: 70px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  color: #000000;
+  border-radius: 3px;
+  position: relative;
+  left: 130px;
+  top: 10px;
+}
+
+.footer {
+  width: 100%;
+  height: 85px;
+  background-color: #f5c0c0;
+  position: relative;
+  top: 30px;
+  text-align: center;
+}
+
+.footer-text {
+  display: inline-block;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 20px;
+  padding-top: 50px;
+}
+
+.contact-form__button:hover {
+  background-color: #78dec7;
+}
+
+.contact-form__button:active {
+  background-color: #78dec1;
+  box-shadow: 0 2px rgb(179, 175, 175);
+  transform: translateY(4px);
+}
+
+@media only screen and (min-width: 769px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /*.header-nav {
+why this code does not work in this section but it does in de header?
+display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end; */
+
+  .header {
+    position: static;
+  }
+
+  .header-nav__link {
+    color: #000000;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 26px;
+    line-height: 32px;
+    margin-left: 18px;
+    display: inline-block;
+  }
+
+  .header-nav__link:link {
+    text-decoration: none;
+  }
+
+  .nav-hamburger label {
+    display: none;
+  }
+
+  #toggle {
+    display: none;
+  }
+
+  .main {
+    width: 1533px;
+    /* height: 2000px; */
+    padding-left: 88px;
+    padding-top: 239px;
+    padding-right: 38px;
+    /*Here maybe I could give a w-h to the main*/
+  }
+
+  .main-presentation__title {
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 71.81px;
+    line-height: 88px;
+    text-align: center;
+    float: left;
+  }
+
+  .main-presentation__img {
+    width: 667px;
+    height: 446px;
+    float: right;
+  }
+
+  .main-introducingme {
+    margin-top: 600px;
+  }
+
+  .main-introducingme__img {
+    width: 365px;
+    height: 338px;
+    float: left;
+  }
+
+  .main-introducingme__text {
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 49px;
+    display: inline;
+    position: relative;
+    top: 39px;
+    left: 35px;
+  }
+
+  .main-tools {
+    position: relative;
+    top: 311px;
+  }
+
+  .main-tools__title {
+    font-family: "Montserrat", Helvetica, sans-serif;
+    color: #ff7171;
+    font-size: 69px;
+  }
+
+  .main-tools__divtools {
+    width: 700px;
+    height: 500px;
+    background-color: #f0e4d7;
+    padding: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-tools div img {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* .main-projects {
+  margin-top: 50px;
+} */
+
+  .main-projects__div {
+    width: 854px;
+    height: 500px;
+    position: relative;
+    top: 590px;
+    left: 270x;
+    background-color: #fdfbf9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+  }
+
+  .main-projects__div p {
+    text-align: center;
+    color: #000000;
+    opacity: 13%;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: 56px;
+    padding: 219px 20px;
+  }
+
+  .main-projects__divtext h2 {
+    font-family: "Montserrat", Helvetica, sans-serif;
+    color: #ff7171;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 69px;
+    line-height: 84px;
+    position: relative;
+    bottom: 0px;
+    left: 200px;
+  }
+
+  .main-contact {
+    position: relative;
+    top: 650px;
+  }
+
+  .main-contact__form {
+    width: 854px;
+    height: 500px;
+    background-color: #9fd8df;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 30px 55px;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: 22px;
+  }
+
+  .main-contact__title {
+    font-family: "Montserrat", Helvetica, sans-serif;
+    color: #ff7171;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 69px;
+    line-height: 84px;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    margin: 43px 0;
+    width: 202px;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  }
+
+  .main-contact__form textarea {
+    width: 300px;
+    height: 200px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  }
+
+  .contact-form__button {
+    position: relative;
+    left: 26px;
+    top: -10px;
+    width: 90px;
+  }
+
+  .footer {
+    width: 100%;
+    height: 85px;
+    background-color: #f5c0c0;
+    position: relative;
+    top: 797px;
+    text-align: center;
+  }
+
+  .footer-text {
+    display: inline-block;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: 20px;
+    padding-top: 50px;
+  }
+}
